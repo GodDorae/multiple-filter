@@ -28,11 +28,12 @@ const onClick = (
           (obj) => obj.value === value
         )!.id;
         if (filterObject.obj.some((obj) => obj === targetObjId)) {
-          if (targetObjId === "obj-1") return;
-          else {
+          if (targetObjId === "obj-1") {
+            return;
+          } else {
             setFilterObject((prev) => {
-              let objList = prev.obj;
-              objList = objList.splice(objList.indexOf(targetObjId), 1);
+              const objList = prev.obj;
+              objList.splice(objList.indexOf(targetObjId), 1);
               if (objList.length) {
                 const newObj = { ...prev, obj: objList };
                 return newObj;
@@ -67,11 +68,12 @@ const onClick = (
           (num) => num.value === value
         )!.id;
         if (filterObject.num.some((num) => num === targetNumId)) {
-          if (targetNumId === "num-1") return;
-          else {
+          if (targetNumId === "num-1") {
+            return;
+          } else {
             setFilterObject((prev) => {
-              let numList = prev.num;
-              numList = numList.splice(numList.indexOf(targetNumId), 1);
+              const numList = prev.num;
+              numList.splice(numList.indexOf(targetNumId), 1);
               if (numList.length) {
                 const newObj = { ...prev, num: numList };
                 return newObj;
@@ -104,11 +106,12 @@ const onClick = (
           (place) => place.value === value
         )!.id;
         if (filterObject.place.some((place) => place === targetPlaceId)) {
-          if (targetPlaceId === "place-1") return;
-          else {
+          if (targetPlaceId === "place-1") {
+            return;
+          } else {
             setFilterObject((prev) => {
-              let placeList = prev.place;
-              placeList = placeList.splice(placeList.indexOf(targetPlaceId), 1);
+              const placeList = prev.place;
+              placeList.splice(placeList.indexOf(targetPlaceId), 1);
               if (placeList.length) {
                 const newObj = { ...prev, place: placeList };
                 return newObj;

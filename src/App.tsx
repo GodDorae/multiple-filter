@@ -52,8 +52,6 @@ const App = () => {
 
   const filteredData = filterFunc(filterObject);
 
-  console.log(filterObject);
-
   return (
     <Container>
       <Row>
@@ -173,49 +171,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-  /* <SelectOptions
-          data-category="obj"
-          onInput={(e) => {
-            onInput(e, setFilterObject);
-          }}
-        >
-          {objCategories.map((item) => {
-            return (
-              <option key={item.id} value={item.value}>
-                {item.value}
-              </option>
-            );
-          })}
-        </SelectOptions>
-                <SelectOptions
-          data-category="num"
-          onInput={(e) => {
-            onInput(e, setFilterObject);
-          }}
-        >
-          {numCategories.map((item) => {
-            return (
-              <option key={item.id} value={item.value}>
-                {item.value}
-              </option>
-            );
-          })}
-        </SelectOptions>
-        <SelectOptions
-          data-category="place"
-          onInput={(e) => {
-            onInput(e, setFilterObject);
-          }}
-        >
-          {placeCategories.map((item) => {
-            return (
-              <option key={item.id} value={item.value}>
-                {item.value}
-              </option>
-            );
-          })}
-        </SelectOptions>
-        */
-}
